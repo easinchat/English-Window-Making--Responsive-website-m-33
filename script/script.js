@@ -45,10 +45,10 @@ const displayLevelWord = (words) => {
     <div
         class="bg-white rounded-xl shadow-sm text-center py-10 px-5 space-y-4"
       >
-        <h2 class="font-bold text-2xl">${word.word}</h2>
-        <p class="text-xl">${word.meaning}</p>
+        <h2 class="font-bold text-2xl">${word.word ? word.word : "শব্দ পাওয়া যায়নি"}</h2>
+        <p class="text-xl">${word.meaning ? word.meaning : "অর্থ পাওয়া যায়নি"}</p>
         <div>
-          <h2 class="font-semibold text-xl font-bangla">${word.pronunciation}</h2>
+          <h2 class="font-semibold text-xl font-bangla">${word.pronunciation ? word.pronunciation : "উচ্চারণ পাওয়া যায়নি"}</h2>
         </div>
         <div class="flex justify-between">
           <button class="btn bg-[#1a91ff1a] hover:bg-[#1A91FF]">
