@@ -31,10 +31,10 @@ const displayLevelWord = (words) => {
     <div
         class="bg-white rounded-xl shadow-sm text-center py-10 px-5 space-y-4"
       >
-        <h2 class="font-bold text-2xl">Eager</h2>
-        <p class="text-xl">Meaning /Pronounciation</p>
+        <h2 class="font-bold text-2xl">${word.word}</h2>
+        <p class="text-xl">${word.meaning}</p>
         <div>
-          <h2 class="font-semibold text-xl font-bangla">"আগ্রহী / ইগার"</h2>
+          <h2 class="font-semibold text-xl font-bangla">${word.pronunciation}</h2>
         </div>
         <div class="flex justify-between">
           <button class="btn bg-[#1a91ff1a] hover:bg-[#1A91FF]">
