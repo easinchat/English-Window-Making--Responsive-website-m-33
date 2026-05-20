@@ -126,6 +126,11 @@
         class="flex gap-5 mx-auto flex-wrap justify-center"
       ></div>
     </section>
+
+    <!-- Loding method -->
+    <section id="spinner" class="flex justify-center items-center py-10 hidden">
+      <span class="loading loading-spinner loading-xs"></span>
+    </section>
     <!-- Vocabularies card Section -->
     <section
       id="word-container"
@@ -139,6 +144,21 @@
         </p>
         <h2 class="font-bold text-3xl font-bangla">একটি Lesson Select করুন।</h2>
       </div>
+    </section>
+    <!-- Open the modal using ID.showModal() method -->
+    <section>
+      <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+      <dialog id="word_modal" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+          <div id="details-container" class="space-y-5"></div>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
     </section>
     <script src="script/script.js"></script>
   </body>
